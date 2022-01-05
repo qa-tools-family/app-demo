@@ -24,6 +24,7 @@ type HttpServer struct {
 }
 
 func (s *HttpServer) Setup()  {
+	s.Engine = gin.New()
 	gin.SetMode(s.mode)
 }
 
